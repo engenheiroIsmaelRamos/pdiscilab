@@ -1,0 +1,214 @@
+This module was previously based on SIVP module and now has been re-coded to
+work with Scilab 6.0!
+
+-------------------------------------------------------
+Updated 6-Apr-17
+-------------------------------------------------------
+1. Add numbers of Feature Detection, Description and Matching functions. Example
+at http://scilabipcv.tritytech.com/2017/04/05/image-matching/
+
+2. Add object detection function
+
+3. Add unit_tests
+
+4. Add instructions at startup after installation for Linux Users.
+-------------------------------------------------------
+PLEASE SCROLL DOWN TO THE "NEWS" SECTION FOR THE INSTALLATION
+INSTRUCTIONS ESPECIALLY FOR LINUX USER.
+-------------------------------------------------------
+
+Currently the module covers following areas:
+
+IPCV - Image Processing and Computer Vision Toolbox for Scilab 
+
+1. Analytic Geometry 
+plot3dot — 3-D Parametric plot for points
+
+2. Filter Design and Visualization 
+fft2pad — Pad smaller matrix with zeros to the given size before
+transformation. 
+immesh — Visualize 2D matrix using mesh plot, useful for frequency response
+visualization. 
+imsmoothsurf — Visualize 2D matrix using smooth surf plot, useful for
+frequency response visualization. 
+imsurf — Visualize 2D matrix using surf plot, useful for frequency response
+visualization. 
+mkfftfilter — Create frequency domain filter 
+
+3. Image Analysis and Statistics 
+corr2 — 2D correlation coefficient 
+edge — Find edges in a single channel image. 
+imhist — get the histogram of an image 
+impixel — Return selected pixel coordinates and values 
+improfile — Return profiles for the selected 2 points 
+mean2 — Average/mean of matrix elements 
+std2 — Standard deviation of 2D matrix elements 
+stdev2 — Standard deviation of 2D matrix elements 
+
+4. Image Arithmetic 
+imabsdiff — Calculate absolute difference of two images 
+imadd — Add two images or add a constant to an image 
+imcomplement — Complement image 
+imdivide — Divide two images or divide an image by an constant. 
+imlincomb — Linear combination of images 
+immultiply — Multiply two images or multiply an image by an constant. 
+imsubtract — Subtract two images or subtract a constant from an image 
+
+5. Image Block Processing 
+im2col — Convert image into series of columns 
+imblockproc — Distict block processing for an image 
+imblockslide — Sliding block processing for an image 
+imcolproc — Sliding block processing for an image, with vectorization 
+
+6. Image Enhancement and Restoration 
+imadjust — Adjust the intensity of an image from given source histogram range
+to the destination histogram range 
+imdeconvl2 — Deconvolution with L2 Regularization 
+imdeconvsobolev — Deconvolution by Sobolev Regularization 
+imdeconvwiener — Deconvolution with Wiener method 
+imdecorrstretch — Apply decorrelation stretch to multichannel image 
+imhistequal — Histogram Equalization 
+iminpaint — Restores the selected region in an image using the region
+neighborhood 
+immedian — Image median filter 
+imnoise — Add noise (gaussian, etc.) to an image 
+imwiener2 — Wiener filter for image 
+
+7. Image Linear Filtering 
+filter2 — 2D digital filtering 
+fspecial — Create some 2D special filters 
+imfilter — Image filtering 
+
+8. Image Reading, Display and Exploration 
+imdestroy — Destroy graphic window created using imdisplay (highgui). 
+imdestroyall — Destroy ALL graphic window created using imdisplay (highgui). 
+imdisplay — Display image using highgui for faster frame rate 
+imread — Reads image file 
+imshow — Display image in graphic window 
+imwrite — Write image to file 
+tifread — Special function to read 12-bits 1024x1024 CCD image 
+
+9. Image Registration and Image Fusion 
+imfuse — Image fusion 
+imgettransform — Get transformation matrix from given source and destination
+points 
+imphasecorr — Detection and automatic image registration for translation,
+rotation and scale using phase correlation method. 
+imtransform — Image affine transformation 
+warpmatselect — Selecting points for image transformation 
+
+10. Image Transforms 
+imdct — Discrete cosine transform (DCT) 
+imhough — Image Hough transformation 
+imhoughc — Image Hough transformation for Circle Detection 
+imidct — Inverse discrete cosine transform (DCT) 
+imlogpolar — Remaps an image to log-polar space. 
+imradon — Calculates the 2D-Radon transform of the matrix 
+
+11. Image Types and Color Space Conversions 
+hsv2rgb — Convert a HSV image to the equivalent RGB image. 
+im2bw — Convert image to binary 
+im2double — Convert image to double precision 
+im2int16 — Convert image to 16-bit signed integers 
+im2int32 — Convert image to 32-bit signed integers 
+im2int8 — Convert image to 8-bit signed integers 
+im2uint16 — Convert image to 16-bit unsigned integers 
+im2uint8 — Convert image to 8-bit unsigned integers 
+imgraythresh — Calculate Otsu's Global threshold value 
+imnorm — Normalize input 2-D Image to the range of 0-1 for double, or 0-255
+for uint8 
+mat2gray — Convert matrix to grayscale image 
+ntsc2rgb — Convert a NTSC image to the equivalent RGB image. 
+rgb2gray — Convert RGB images to gray images 
+rgb2hsv — Convert a RGB image to the equivalent HSV image 
+rgb2ind — Convert RGB image to index image 
+rgb2lab — Convert from RGB color space to LAB color space 
+rgb2ntsc — Convert a RGB image to the equivalent NTSC image YIQ. 
+rgb2ycbcr — Convert a RGB image to the equivalent YCbCr image. 
+xs2im — Convert graphics to an image matrix. 
+ycbcr2rgb — Convert a YCbCr image to the equivalent RGB image. 
+
+12. Morphological Operations 
+bwborder — Find border for an image 
+imblackhat — Image blackhat 
+imblobprop — Calculate blobs properties from labeled image 
+imclose — Image closing 
+imcreatese — Creating Structure Element for Morphological operation 
+imdilate — Image dilation 
+imerode — Image erosion 
+imgradient — Image gradient 
+imhitmiss — Image Hit-Miss 
+imlabel — Find blobs in an image 
+imopen — Image opening 
+imtophat — Image tophat 
+
+13. Object Detection 
+Coming soon
+
+
+14. ROI Processing 
+imroifill — Fill and image using the border color of the selected region 
+imroifilt — Filtering of a selected region 
+
+15. Spatial Transformations 
+imcrop — Crop image 
+imcropm — Crop an image using mouse selection 
+impyramid — Image pyramid reduction and expansion 
+imresize — Resizes image 
+imrotate — Rotate an image to given angle 
+
+16. Utilities and Interactive Tools 
+im2movie — Create movie from sequence of images 
+imaddtext — Adding text to a color image 
+imbreakset — Set the break event with Scilab figure 
+imbreakunset — Unset the break event with Scilab figure 
+imcaminfo — Show the supported raw resolution for an USB camera (linux only) 
+imdistline — Measure distance between 2 selected points in pixels. 
+imlsusb — List all USB devices connected to PC (linux only) 
+impixelval — Interactive tool to inspect pixel value at selected point 
+imrects — Draw Bounding Boxes on An Image 
+imroi — Select region of interest and create a mask from it 
+imselect — Select points on an image. 
+rectangle — Draw a rectangle on image 
+
+17. Video Handling 
+addframe — Add a frame to the video file. (experimental) 
+aviclose — Close a video file. (experimental) 
+avicloseall — Close all opened video files/cameras. (experimental) 
+avifile — Create a new video file to write. (experimental) 
+avilistopened — Show all opened video files. (experimental) 
+aviopen — Open a video file. (experimental) 
+avireadframe — Grabs and returns a frame from a opened video file or camera
+(experimental) 
+camopen — Open a camera. (experimental) 
+camread — Grabs and returns a frame from a camera(experimental) 
+
+18. Feature Detection, Description and Matching
+imbestmatches — Find the best matched features from 2 features objects and the
+matching matrix
+imdetect_BRISK — Detect features from an image with BRISK algorithm
+imdetect_DENSE — Detect features from an image with DENSE algorithm
+imdetect_FAST — Detect features from an image with FAST algorithm. Usually
+used for corner features.
+imdetect_GFTT — Detect features from an image with GFTT algorithm
+imdetect_HARRIS — Detect features from an image with HARRIS algorithm
+imdetect_MSER — Detect features from an image with MSER algorithm
+imdetect_ORB — Detect features from an image with ORB algorithm
+imdetect_SIFT — Detect features from an image with SIFT algorithm
+imdetect_STAR — Detect features from an image with STAR algorithm
+imdetect_SURF — Detect features from an image with SURF algorithm
+imdrawmatches — Draw matching result for 2 images
+imextract_DescriptorBRIEF — Computes the descriptors for a set of keypoints
+detected in an image with BRIEF method.
+imextract_DescriptorBRISK — Computes the descriptors for a set of keypoints
+detected in an image with BRISK method.
+imextract_DescriptorFREAK — Computes the descriptors for a set of keypoints
+detected in an image with FREAK method.
+imextract_DescriptorORB — Computes the descriptors for a set of keypoints
+detected in an image with ORB method.
+imextract_DescriptorSIFT — Computes the descriptors for a set of keypoints
+detected in an image with SIFT method.
+imextract_DescriptorSURF — Computes the descriptors for a set of keypoints
+detected in an image with SURF method.
+immatch_BruteForce — Brute-force matcher for features matching.
+plotfeature — Plot the features detected by feature detectors
